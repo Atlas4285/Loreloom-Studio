@@ -1,0 +1,60 @@
+[data-loreloom-root][data-theme="scarlet-allure"] {
+  /* Background and surfaces: violet velvet and cool plum shadows. */
+  --theme-background-deep: #120c1c;
+  --theme-background: #1d142b;
+  --theme-surface: #32213f;
+  --theme-surface-raised: #49305a;
+  --theme-surface-hover: #654171;
+
+  /* Text: warm pearl, rose milk, and muted mauve. */
+  --theme-text-primary: #fff5f4;
+  --theme-text-secondary: #f8d9ef;
+  --theme-text-muted: #d5b4cf;
+  --theme-text-on-accent: #2c1035;
+
+  /* Primary and secondary accents: vivid candy pink into luminous rose pink. */
+  --theme-accent-primary-light: #ffb8e3;
+  --theme-accent-primary: #ff54b8;
+  --theme-accent-primary-dark: #dd318b;
+  --theme-accent-bridge-primary: #ff65c1;
+  --theme-accent-bridge-secondary: #ff76ca;
+  --theme-accent-secondary-light: #ffe0f4;
+  --theme-accent-secondary: #ff8bd2;
+  --theme-accent-secondary-dark: #d957aa;
+
+  /* Tertiary accent, highlight, and status: lilac, champagne, mint, and coral. */
+  --theme-accent-tertiary-light: #efd5ff;
+  --theme-accent-tertiary: #c69aff;
+  --theme-accent-tertiary-dark: #935dd1;
+  --theme-accent-bridge-highlight: #ffb2df;
+  --theme-highlight-light: #ffedcf;
+  --theme-highlight: #ffd59d;
+  --theme-highlight-dark: #aa7743;
+  --theme-status-success: #88dfbf;
+  --theme-status-danger: #ff876d;
+
+  /* Shared effects: satin reflections, rose glass, and diffused warm light. */
+  --theme-glass: rgb(50 33 63 / 86%);
+  --theme-border: rgb(255 139 210 / 48%);
+  --theme-border-strong: rgb(255 184 227 / 80%);
+  --theme-gradient-main: linear-gradient(
+    110deg,
+    var(--theme-accent-primary) 0%,
+    var(--theme-accent-bridge-primary) 38%,
+    var(--theme-accent-bridge-secondary) 70%,
+    var(--theme-accent-secondary) 100%
+  );
+  --theme-gradient-accent: linear-gradient(
+    110deg,
+    var(--theme-accent-tertiary),
+    var(--theme-accent-bridge-highlight),
+    var(--theme-highlight)
+  );
+  --theme-ambient-background:
+    radial-gradient(circle at 16% 18%, rgb(255 84 184 / 26%), transparent 36%),
+    radial-gradient(circle at 84% 76%, rgb(198 154 255 / 16%), transparent 38%),
+    radial-gradient(circle at 86% 12%, rgb(255 213 157 / 9%), transparent 28%),
+    var(--theme-background);
+  --theme-glow:
+    0 8px 30px rgb(255 84 184 / 30%), 0 5px 22px rgb(255 139 210 / 24%);
+}

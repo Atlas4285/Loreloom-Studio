@@ -1,0 +1,27 @@
+{
+  "id": "random-integer",
+  "scriptId": "be6e6eb5-dfe6-4af7-a0d5-7be0e0a400e7",
+  "name": {
+    "en": "Random Integers",
+    "zh-CN": "随机整数"
+  },
+  "targets": ["character"],
+  "entry": "./index.ts",
+  "provides": [
+    {
+      "service": "random-integer",
+      "protocol": 1
+    },
+    {
+      "service": "random-integer-settings",
+      "protocol": 1
+    }
+  ],
+  "uses": [
+    {
+      "service": "settings-panel",
+      "protocol": 1,
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "studio-settings",
+  "scriptId": "0fb75987-ae9c-4fc1-8a1a-735fb9bbad41",
+  "name": {
+    "en": "Studio Settings",
+    "zh-CN": "设置按钮"
+  },
+  "targets": ["preset"],
+  "entry": "./index.ts",
+  "buttons": [
+    {
+      "name": "Settings",
+      "visible": true
+    }
+  ],
+  "provides": [
+    {
+      "service": "settings-panel",
+      "protocol": 1
+    }
+  ],
+  "uses": []
+}

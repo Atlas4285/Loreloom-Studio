@@ -1,0 +1,13 @@
+/* Limit editor styling to this module's registered textarea in the shared panel. */
+.loreloom-settings[data-loreloom-root]
+  textarea.loreloom-settings__input[id$="-randomIntegerDescription"] {
+  height: 180px;
+  min-height: 140px;
+  min-width: 0;
+  padding: 9px 11px;
+  background: var(--theme-background-deep);
+  border-color: var(--theme-border-strong);
+  font-weight: inherit;
+  line-height: 1.65;
+  resize: vertical;
+}

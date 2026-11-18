@@ -1,0 +1,310 @@
+#chat .mes .mes_text > .loreloom-token-usage--requests[data-loreloom-root] {
+  min-width: 0;
+  max-width: 100%;
+  background: transparent;
+  font-family: var(--token-usage-body-font-family, inherit);
+  font-size: var(--token-usage-body-font-size, inherit);
+  font-weight: var(--token-usage-body-font-weight, inherit);
+  text-align: start;
+}
+
+.loreloom-token-usage[data-loreloom-root] {
+  color: var(--theme-text-primary);
+  -webkit-text-stroke: 0;
+  text-shadow: none;
+}
+
+#qr--bar .loreloom-token-usage[data-loreloom-root],
+#qr--bar
+  .loreloom-token-usage[data-loreloom-root]
+  :is(
+    .loreloom-token-usage__counts,
+    .loreloom-token-usage__count,
+    .loreloom-token-usage__total,
+    .loreloom-token-usage__label,
+    .loreloom-token-usage__number,
+    .loreloom-token-usage__fraction
+  ) {
+  color: var(--theme-text-primary);
+  font-family: var(--studio-font, sans-serif);
+  font-size: 0.82rem;
+  font-weight: 750;
+  -webkit-text-stroke: 0;
+  text-shadow: none;
+}
+
+#chat .mes .mes_text .loreloom-token-usage--inline[data-loreloom-root] {
+  position: relative;
+  box-sizing: border-box;
+  min-width: 0;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 6px;
+  padding: 5px 8px;
+  background: transparent;
+  border: 1px solid var(--theme-border-strong);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: max(
+    10px,
+    calc(
+      var(--token-usage-body-font-size, var(--text-style-font-size, 1em)) - 4px
+    )
+  );
+  font-weight: inherit;
+  line-height: var(
+    --token-usage-compact-line-height,
+    var(--text-style-compact-line-height, 1.2)
+  );
+  user-select: text;
+}
+
+#chat
+  .mes
+  .mes_text
+  .loreloom-token-usage--inline[data-loreloom-root]
+  :is(
+    .loreloom-token-usage__counts,
+    .loreloom-token-usage__count,
+    .loreloom-token-usage__label,
+    .loreloom-token-usage__number
+  ) {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.loreloom-token-usage[data-loreloom-root] .loreloom-token-usage__counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+}
+
+.loreloom-token-usage[data-loreloom-root] .loreloom-token-usage__total {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 9px 12px;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+#qr--bar:has(.loreloom-token-usage--summary[data-loreloom-root]) {
+  opacity: 1;
+}
+
+#qr--bar .loreloom-token-usage--summary[data-loreloom-root] {
+  box-sizing: border-box;
+  order: -1;
+  flex: 0 0 auto;
+  width: max-content;
+  margin: 2px 0 2px 6px;
+  background: transparent;
+  border: 1px solid var(--theme-border-strong);
+  border-radius: 10px;
+  line-height: 1.2;
+}
+
+#qr--bar
+  .loreloom-token-usage--summary[data-loreloom-root]
+  .loreloom-token-usage__total {
+  grid-template-columns: auto 64px auto auto;
+  min-height: 28px;
+  gap: 6px;
+  padding: 5px 8px;
+  border-radius: 9px;
+}
+
+#qr--bar
+  .loreloom-token-usage--summary[data-loreloom-root]
+  .loreloom-token-usage__track {
+  height: 6px;
+}
+
+.loreloom-token-usage[data-loreloom-root] .loreloom-token-usage__count:hover,
+.loreloom-token-usage[data-loreloom-root]
+  .loreloom-token-usage__count:focus-within,
+.loreloom-token-usage[data-loreloom-root] .loreloom-token-usage__total:hover,
+.loreloom-token-usage[data-loreloom-root]
+  .loreloom-token-usage__total:focus-within {
+  z-index: 2;
+}
+
+.loreloom-token-usage[data-loreloom-root] .loreloom-token-usage__count {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+}
+
+.loreloom-token-usage[data-loreloom-root] .loreloom-token-usage__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: inherit;
+  white-space: nowrap;
+}
+
+.loreloom-token-usage[data-loreloom-root] .loreloom-token-usage__help {
+  display: inline-flex;
+  flex: none;
+}
+
+.loreloom-token-usage[data-loreloom-root] button.loreloom-token-usage__info {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  min-height: 14px;
+  padding: 0;
+  margin: 0;
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--theme-accent-secondary);
+  border-radius: 50%;
+  color: var(--theme-accent-secondary-light);
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.loreloom-token-usage[data-loreloom-root]
+  button.loreloom-token-usage__info:focus-visible {
+  outline: 2px solid var(--theme-accent-secondary-light);
+  outline-offset: 3px;
+}
+
+.loreloom-token-usage[data-loreloom-root] .loreloom-token-usage__tooltip {
+  display: none;
+  position: fixed;
+  inset: auto;
+  z-index: 100;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: min(280px, calc(100vw - 16px));
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--theme-border-strong);
+  border-radius: 10px;
+  background: var(--theme-background-deep);
+  color: var(--theme-text-primary);
+  box-shadow: 0 6px 18px rgb(0 0 0 / 35%);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+  white-space: pre-line;
+  pointer-events: none;
+}
+
+.loreloom-token-usage[data-loreloom-root]
+  .loreloom-token-usage__tooltip:popover-open {
+  display: block;
+}
+
+.loreloom-token-usage[data-loreloom-root]
+  .loreloom-token-usage__tooltip[data-open] {
+  display: block;
+}
+
+.loreloom-token-usage[data-loreloom-root] .loreloom-token-usage__number,
+.loreloom-token-usage[data-loreloom-root] .loreloom-token-usage__fraction {
+  color: inherit;
+  font-weight: inherit;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.loreloom-token-usage[data-loreloom-root] .loreloom-token-usage__total {
+  display: grid;
+  grid-template-columns: auto minmax(48px, 1fr) auto auto;
+  align-items: center;
+  gap: 11px;
+}
+
+.loreloom-token-usage[data-loreloom-root] .loreloom-token-usage__track {
+  box-sizing: border-box;
+  height: 9px;
+  overflow: hidden;
+  background: transparent;
+  border: 1px solid var(--theme-accent-secondary);
+  border-radius: 999px;
+}
+
+.loreloom-token-usage[data-loreloom-root] .loreloom-token-usage__fill {
+  display: block;
+  width: var(--usage-percent);
+  min-width: var(--usage-min-width, 0px);
+  max-width: 100%;
+  height: 100%;
+  background-color: var(--theme-accent-primary);
+  background-image: var(--theme-gradient-main);
+  border-radius: inherit;
+  box-shadow: 0 0 12px
+    color-mix(in srgb, var(--theme-accent-secondary) 60%, transparent);
+  transition: width 220ms ease;
+}
+
+.loreloom-token-usage[data-over-limit="true"] .loreloom-token-usage__fill {
+  background: var(--theme-status-danger);
+  box-shadow: 0 0 12px
+    color-mix(in srgb, var(--theme-status-danger) 55%, transparent);
+}
+
+@media (max-width: 460px) {
+  .loreloom-token-usage[data-loreloom-root] .loreloom-token-usage__total {
+    gap: 7px;
+  }
+  #qr--bar
+    .loreloom-token-usage--summary[data-loreloom-root]
+    .loreloom-token-usage__total {
+    grid-template-columns: auto 48px auto auto;
+    gap: 5px;
+    padding-inline: 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loreloom-token-usage[data-loreloom-root] .loreloom-token-usage__fill {
+    transition: none;
+  }
+}
+
+.loreloom-token-usage__summary-trigger {
+  display: none;
+}
+@media (max-width: 600px) {
+  #qr--bar .loreloom-token-usage--summary[data-loreloom-root] {
+    margin-left: 0;
+  }
+  #qr--bar
+    .loreloom-token-usage--summary[data-loreloom-root]
+    .loreloom-token-usage__total {
+    grid-template-columns: auto 48px;
+  }
+  #qr--bar .loreloom-token-usage--summary .loreloom-token-usage__fraction,
+  #qr--bar .loreloom-token-usage--summary .loreloom-token-usage__info {
+    display: none;
+  }
+  #qr--bar .loreloom-token-usage--summary .loreloom-token-usage__help {
+    position: absolute;
+  }
+  #qr--bar button.loreloom-token-usage__summary-trigger {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: inherit;
+    background: transparent;
+    cursor: pointer;
+  }
+}

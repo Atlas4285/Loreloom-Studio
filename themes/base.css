@@ -1,0 +1,26 @@
+:where([data-loreloom-root]) {
+  color-scheme: dark;
+  --studio-font:
+    Inter, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --studio-font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --studio-radius-small: 8px;
+  --studio-radius-medium: 14px;
+  --studio-radius-large: 24px;
+  --studio-space-1: 4px;
+  --studio-space-2: 8px;
+  --studio-space-3: 12px;
+  --studio-space-4: 16px;
+  --studio-space-6: 24px;
+  --studio-space-8: 32px;
+  --studio-motion: 160ms;
+  font-family: var(--studio-font);
+  color: var(--theme-text-primary);
+  background: var(--theme-background);
+  accent-color: var(--theme-accent-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where([data-loreloom-root]) {
+    --studio-motion: 0ms;
+  }
+}

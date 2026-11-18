@@ -1,0 +1,31 @@
+{
+  "name": "loreloom-studio",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "An integrated workspace for Loreloom themes, scripts, presets, and character cards.",
+  "engines": {
+    "node": ">=22.12.0 <23",
+    "npm": ">=10 <11"
+  },
+  "packageManager": "npm@10.9.8",
+  "scripts": {
+    "dev:preview": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "check": "tsc --noEmit && node --experimental-strip-types tools/check.ts",
+    "build:preview": "npm run check && vite build",
+    "format": "prettier --write '*.{json,ts}' 'locales/*.json' 'themes/**/*.{json,css}' 'shared/**/*.ts' 'preview/**/*.{ts,css,html}' 'tools/**/*.ts' 'scripts/**/*.{ts,json,css}'",
+    "format:check": "prettier --check '*.{json,ts}' 'locales/*.json' 'themes/**/*.{json,css}' 'shared/**/*.ts' 'preview/**/*.{ts,css,html}' 'tools/**/*.ts' 'scripts/**/*.{ts,json,css}'",
+    "compress": "node --experimental-strip-types tools/assets/compress.ts",
+    "build:scripts": "npm run check && node --experimental-strip-types tools/scripts/build.ts",
+    "build:presets": "npm run check && node --experimental-strip-types tools/presets/build.ts",
+    "build:characters": "npm run check && node --experimental-strip-types tools/characters/build.ts"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "prettier": "3.9.9",
+    "sharp": "0.35.5",
+    "typescript": "5.6.3",
+    "vite": "8.3.2"
+  }
+}

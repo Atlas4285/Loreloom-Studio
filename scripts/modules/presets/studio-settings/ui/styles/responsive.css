@@ -1,0 +1,51 @@
+@media (max-width: 600px) {
+  .loreloom-settings__header {
+    min-height: 52px;
+    padding: 8px 10px;
+  }
+  .loreloom-settings__body {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+  .loreloom-settings__nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding: 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-right: 0;
+    border-bottom: 1px solid var(--theme-border);
+  }
+  .loreloom-settings__nav-button {
+    width: auto;
+    white-space: nowrap;
+  }
+  .loreloom-settings__content {
+    padding: 10px 9px 14px;
+  }
+  .loreloom-settings__field {
+    padding: 8px 9px;
+  }
+  .loreloom-settings__field:has(.loreloom-settings__actions) {
+    padding: 0 4px;
+  }
+  .loreloom-settings__group-content {
+    padding: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loreloom-settings__close,
+  .loreloom-settings__nav-button,
+  .loreloom-settings__select,
+  .loreloom-settings__select-trigger::after,
+  .loreloom-settings__option,
+  .loreloom-settings__toggle,
+  .loreloom-settings__toggle::before,
+  .loreloom-settings__input,
+  .loreloom-settings__number,
+  .loreloom-settings__choice {
+    transition: none;
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "groups": [
+    {
+      "id": "surfaces",
+      "tokens": [
+        "--theme-background-deep",
+        "--theme-background",
+        "--theme-surface",
+        "--theme-surface-raised",
+        "--theme-surface-hover"
+      ],
+      "label": {
+        "key": "loreloom.palette.groups.surfaces",
+        "text": "Surfaces"
+      }
+    },
+    {
+      "id": "text",
+      "tokens": [
+        "--theme-text-primary",
+        "--theme-text-secondary",
+        "--theme-text-muted",
+        "--theme-text-on-accent"
+      ],
+      "label": {
+        "key": "loreloom.palette.groups.text",
+        "text": "Typography"
+      }
+    },
+    {
+      "id": "primary",
+      "tokens": [
+        "--theme-accent-primary-light",
+        "--theme-accent-primary",
+        "--theme-accent-primary-dark",
+        "--theme-accent-bridge-primary",
+        "--theme-accent-bridge-secondary",
+        "--theme-accent-secondary-light",
+        "--theme-accent-secondary",
+        "--theme-accent-secondary-dark"
+      ],
+      "label": {
+        "key": "loreloom.palette.groups.primary",
+        "text": "Primary accents"
+      }
+    },
+    {
+      "id": "secondary",
+      "tokens": [
+        "--theme-accent-tertiary-light",
+        "--theme-accent-tertiary",
+        "--theme-accent-tertiary-dark",
+        "--theme-accent-bridge-highlight",
+        "--theme-highlight-light",
+        "--theme-highlight",
+        "--theme-highlight-dark"
+      ],
+      "label": {
+        "key": "loreloom.palette.groups.secondary",
+        "text": "Secondary accents"
+      }
+    },
+    {
+      "id": "status",
+      "tokens": ["--theme-status-success", "--theme-status-danger"],
+      "label": {
+        "key": "loreloom.palette.groups.status",
+        "text": "Status"
+      }
+    },
+    {
+      "id": "effects",
+      "tokens": [
+        "--theme-glass",
+        "--theme-border",
+        "--theme-border-strong",
+        "--theme-gradient-main",
+        "--theme-gradient-accent",
+        "--theme-ambient-background",
+        "--theme-glow"
+      ],
+      "label": {
+        "key": "loreloom.palette.groups.effects",
+        "text": "Effects"
+      }
+    }
+  ],
+  "assetSlots": [
+    "text-style.assistant-top",
+    "text-style.assistant-texture",
+    "text-style.assistant-bottom",
+    "text-style.user",
+    "text-style.tool-call-marker",
+    "text-style.reasoning-marker",
+    "next-actions.panel",
+    "next-actions.list-marker",
+    "studio-settings.dialog",
+    "studio-settings.settings-button",
+    "studio-settings.dialog-title",
+    "state-trace.panel"
+  ]
+}

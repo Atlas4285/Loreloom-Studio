@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "revision": 4,
+  "updatedAt": "2026-11-07T18:37:16Z",
+  "fonts": [
+    {
+      "id": "source-han-serif-sc",
+      "name": {
+        "en": "Source Han Serif SC",
+        "zh-CN": "思源宋体"
+      },
+      "revision": 1,
+      "version": "2.003",
+      "sourceUrl": "https://github.com/adobe-fonts/source-han-serif",
+      "releaseUrl": "https://github.com/adobe-fonts/source-han-serif/releases/tag/2.003R",
+      "license": {
+        "id": "OFL-1.1",
+        "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-serif/2.003R/LICENSE.txt"
+      },
+      "files": [
+        {
+          "id": "variable-normal",
+          "url": "https://cloudreve.atlas4285.site/f/YrJsK/SourceHanSerifSC-VF.ttf.woff2",
+          "sha256": "95bee5840bd5bcc68ada7d9c32fbf40af38a7dadeb77bfae4dd26d85b131ce20",
+          "bytes": 21600852,
+          "format": "woff2",
+          "weight": "250 900",
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "id": "source-han-sans-sc",
+      "name": {
+        "en": "Source Han Sans SC",
+        "zh-CN": "思源黑体"
+      },
+      "revision": 1,
+      "version": "2.005R",
+      "sourceUrl": "https://github.com/adobe-fonts/source-han-sans",
+      "releaseUrl": "https://github.com/adobe-fonts/source-han-sans/releases/tag/2.005R",
+      "license": {
+        "id": "OFL-1.1",
+        "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-sans/2.005R/LICENSE.txt"
+      },
+      "files": [
+        {
+          "id": "variable-normal",
+          "url": "https://cloudreve.atlas4285.site/f/Mlwhj/SourceHanSansSC-VF.ttf.woff2",
+          "sha256": "cfec773cdc2ea964de8713471c6fd20774bc40617f5567f92efeeccaca6604b0",
+          "bytes": 14129688,
+          "format": "woff2",
+          "weight": "250 900",
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "id": "lxgw-wenkai",
+      "name": {
+        "en": "LXGW WenKai",
+        "zh-CN": "霞鹜文楷"
+      },
+      "revision": 1,
+      "version": "v1.530",
+      "sourceUrl": "https://github.com/lxgw/LxgwWenKai",
+      "releaseUrl": "https://github.com/lxgw/LxgwWenKai/releases/tag/v1.530",
+      "license": {
+        "id": "OFL-1.1",
+        "url": "https://raw.githubusercontent.com/lxgw/LxgwWenKai/v1.530/OFL.txt"
+      },
+      "files": [
+        {
+          "id": "regular",
+          "url": "https://cloudreve.atlas4285.site/f/yzgTj/LXGWWenKai-Regular.ttf",
+          "sha256": "2d73eea94ad808999d90c0000c239a84a33b09d4bc6ab6c5b8bbf1eda8a7fc8b",
+          "bytes": 25928940,
+          "format": "ttf",
+          "weight": "400",
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "id": "sarasa-gothic-sc",
+      "name": {
+        "en": "Sarasa Gothic SC",
+        "zh-CN": "更纱黑体"
+      },
+      "revision": 1,
+      "version": "1.0.43",
+      "sourceUrl": "https://github.com/be5invis/Sarasa-Gothic",
+      "releaseUrl": "https://github.com/be5invis/Sarasa-Gothic/releases/tag/v1.0.43",
+      "license": {
+        "id": "OFL-1.1",
+        "url": "https://raw.githubusercontent.com/be5invis/Sarasa-Gothic/v1.0.43/LICENSE"
+      },
+      "files": [
+        {
+          "id": "regular",
+          "url": "https://cloudreve.atlas4285.site/f/5dxCa/SarasaGothicSC-Regular.ttf",
+          "sha256": "de65a1791c1dc9971f021545c15653ea46a86a94ba6284bd70f12e7242b39687",
+          "bytes": 24047784,
+          "format": "ttf",
+          "weight": "400",
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "id": "lemi-shiguang-shouzha",
+      "name": {
+        "en": "LemiShiGuangShouZhaTi",
+        "zh-CN": "乐米拾光手札体"
+      },
+      "revision": 1,
+      "version": "1.001",
+      "sourceUrl": "https://font.leminet.cn/",
+      "releaseUrl": "https://font.leminet.cn/",
+      "license": {
+        "id": "LicenseRef-Lemi-Author-Declaration",
+        "url": "https://font.leminet.cn/"
+      },
+      "files": [
+        {
+          "id": "regular",
+          "url": "https://cloudreve.atlas4285.site/f/zVoCK/%E4%B9%90%E7%B1%B3%E6%8B%BE%E5%85%89%E6%89%8B%E6%9C%AD%E4%BD%93.ttf",
+          "sha256": "8e3c76c6237ab8cf20b859b1b2fe4a31e93c67778149b34b692dfd38a133a404",
+          "bytes": 4899484,
+          "format": "ttf",
+          "weight": "400",
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "id": "lemi-yueying-song",
+      "name": {
+        "en": "LemiYueYingSong",
+        "zh-CN": "乐米月萤宋"
+      },
+      "revision": 1,
+      "version": "1.000",
+      "sourceUrl": "https://font.leminet.cn/",
+      "releaseUrl": "https://font.leminet.cn/",
+      "license": {
+        "id": "LicenseRef-Lemi-Author-Declaration",
+        "url": "https://font.leminet.cn/"
+      },
+      "files": [
+        {
+          "id": "regular",
+          "url": "https://cloudreve.atlas4285.site/f/jVlU9/%E4%B9%90%E7%B1%B3%E6%9C%88%E8%90%A4%E5%AE%8B.ttf",
+          "sha256": "8e2a88a45e33c5d5dcc5a9cae1464577866314fdc55d0df18f04bae790f9b178",
+          "bytes": 4256920,
+          "format": "ttf",
+          "weight": "400",
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "id": "bouken-gothic",
+      "name": {
+        "en": "BoukenGothic",
+        "zh-CN": "冒险黑体"
+      },
+      "revision": 1,
+      "version": "1.000",
+      "sourceUrl": "https://lavsic.booth.pm/items/8614459",
+      "releaseUrl": "https://lavsic.booth.pm/items/8614459",
+      "license": {
+        "id": "OFL-1.1",
+        "url": "https://openfontlicense.org/open-font-license-official-text/"
+      },
+      "files": [
+        {
+          "id": "regular",
+          "url": "https://cloudreve.atlas4285.site/f/R11sQ/BoukenGothic.ttf",
+          "sha256": "afc4bf1c7aeae67e2b3caad42830ab1aef436325b4ca66d9202a99859017aedd",
+          "bytes": 7141764,
+          "format": "ttf",
+          "weight": "400",
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "id": "kaitou-yokoku-gothic",
+      "name": {
+        "en": "KaitouYokokuGothic",
+        "zh-CN": "怪盗预告黑体"
+      },
+      "revision": 1,
+      "version": "1.001",
+      "sourceUrl": "https://lavsic.booth.pm/items/7920588",
+      "releaseUrl": "https://lavsic.booth.pm/items/7920588",
+      "license": {
+        "id": "OFL-1.1",
+        "url": "https://openfontlicense.org/open-font-license-official-text/"
+      },
+      "files": [
+        {
+          "id": "regular",
+          "url": "https://cloudreve.atlas4285.site/f/BRjSA/KaitouYokokuGothic.ttf",
+          "sha256": "12899834d3497064f6090462030202efce484f83bfc75ee51e7a12082a80058e",
+          "bytes": 21897756,
+          "format": "ttf",
+          "weight": "900",
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "id": "smiley-sans",
+      "name": {
+        "en": "Smiley Sans",
+        "zh-CN": "得意黑"
+      },
+      "revision": 1,
+      "version": "2.0.1",
+      "sourceUrl": "https://github.com/atelier-anchor/smiley-sans",
+      "releaseUrl": "https://github.com/atelier-anchor/smiley-sans/releases/tag/v2.0.1",
+      "license": {
+        "id": "OFL-1.1",
+        "url": "https://raw.githubusercontent.com/atelier-anchor/smiley-sans/v2.0.1/LICENSE"
+      },
+      "files": [
+        {
+          "id": "oblique",
+          "url": "https://cloudreve.atlas4285.site/f/rG6ty/SmileySans-Oblique.ttf.woff2",
+          "sha256": "731f22973349404b15a88a99ef3b5dd4104c0965c23b7e485c1f11e84fea99e2",
+          "bytes": 1150924,
+          "format": "woff2",
+          "weight": "400",
+          "style": "italic"
+        }
+      ]
+    },
+    {
+      "id": "oz-caramel",
+      "name": {
+        "en": "OzCaramel",
+        "zh-CN": "Oz焦糖下午茶"
+      },
+      "revision": 1,
+      "version": "1.00",
+      "sourceUrl": "https://www.sentyfont.com/",
+      "releaseUrl": "https://www.sentyfont.com/",
+      "license": {
+        "id": "LicenseRef-Senty-Author-Terms",
+        "url": "https://www.sentyfont.com/terms%20and%20conditions.htm"
+      },
+      "files": [
+        {
+          "id": "regular",
+          "url": "https://cloudreve.atlas4285.site/f/kVxFP/0z%E7%84%A6%E7%B3%96%E4%B8%8B%E5%8D%88%E8%8C%B6.ttf",
+          "sha256": "cec8480cfa3bb3d0bad49a8fdc79c1d9acd0efcaf08281dafc691a552af5b68e",
+          "bytes": 15617932,
+          "format": "ttf",
+          "weight": "400",
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "id": "sj-xingkai-c",
+      "name": {
+        "en": "SJxingkai-C",
+        "zh-CN": "三极行楷简体-粗"
+      },
+      "revision": 1,
+      "version": "1.000",
+      "sourceUrl": "https://www.sjtype.com/new_product_show.php?id=174",
+      "releaseUrl": "https://www.sjtype.com/new_product_show.php?id=174",
+      "license": {
+        "id": "LicenseRef-SJType-Author-Declaration",
+        "url": "https://www.sjtype.com/new_product_show.php?id=174"
+      },
+      "files": [
+        {
+          "id": "regular",
+          "url": "https://cloudreve.atlas4285.site/f/w5zTr/%E4%B8%89%E6%9E%81%E8%A1%8C%E6%A5%B7%E7%AE%80%E4%BD%93-%E7%B2%97.ttf",
+          "sha256": "f3fea3c172e9f7af11c50efc39087687a70ba791728e5e71c5ba2ca6dda4aec5",
+          "bytes": 7327288,
+          "format": "ttf",
+          "weight": "400",
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "id": "tegaki-zatsu-851",
+      "name": {
+        "en": "851tegakizatsu",
+        "zh-CN": "851手写杂字体"
+      },
+      "revision": 1,
+      "version": "0.883",
+      "sourceUrl": "https://pm85122.onamae.jp/851fontpage.html",
+      "releaseUrl": "https://pm85122.onamae.jp/851fontpage.html",
+      "license": {
+        "id": "LicenseRef-851-Author-Terms",
+        "url": "https://pm85122.onamae.jp/851fontTerm.html"
+      },
+      "files": [
+        {
+          "id": "regular",
+          "url": "https://cloudreve.atlas4285.site/f/lPaU0/%E6%89%8B%E5%86%99%E6%9D%82%E5%AD%97%E4%BD%93.ttf",
+          "sha256": "e5290d6583e1aef725f07921aad69b9eaa83cf3408273cf840ff31842d118f0e",
+          "bytes": 28588168,
+          "format": "ttf",
+          "weight": "400",
+          "style": "normal"
+        }
+      ]
+    }
+  ]
+}

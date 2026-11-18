@@ -1,0 +1,27 @@
+{
+  "id": "next-actions",
+  "scriptId": "7881154b-bba9-478c-b807-4f3914d6aec0",
+  "name": {
+    "en": "Next Actions",
+    "zh-CN": "后续选项"
+  },
+  "targets": ["preset"],
+  "entry": "./index.ts",
+  "provides": [
+    {
+      "service": "next-actions",
+      "protocol": 1
+    },
+    {
+      "service": "next-actions-settings",
+      "protocol": 1
+    }
+  ],
+  "uses": [
+    {
+      "service": "settings-panel",
+      "protocol": 1,
+      "required": false
+    }
+  ]
+}

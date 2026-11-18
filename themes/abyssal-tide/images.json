@@ -1,0 +1,98 @@
+{
+  "next-actions.panel": {
+    "url": "https://cloudreve.atlas4285.site/f/jllU9/bg-next-actions-panel.webp",
+    "sha256": "cb4141ce68cafe7df1f5a88fe7e58f04c0d78e4322afbaafa5819a180dad3b21",
+    "width": 1440,
+    "height": 810,
+    "bytes": 109214,
+    "mimeType": "image/webp"
+  },
+  "state-trace.panel": {
+    "url": "https://cloudreve.atlas4285.site/f/r46Hy/bg-state-trace-panel.webp",
+    "sha256": "bc4a031ed70df465963d4be10c8e6d798c2944c8602d5a7a6ae84c2112146684",
+    "width": 1440,
+    "height": 810,
+    "bytes": 125028,
+    "mimeType": "image/webp"
+  },
+  "studio-settings.dialog": {
+    "url": "https://cloudreve.atlas4285.site/f/qxGtl/bg-studio-settings-dialog.webp",
+    "sha256": "2f8a02a3acf72f5bf79a9cc5f6a0e179f9e4de17e3e81b3c099c4bf52369507b",
+    "width": 1440,
+    "height": 1080,
+    "bytes": 154424,
+    "mimeType": "image/webp"
+  },
+  "text-style.assistant-bottom": {
+    "url": "https://cloudreve.atlas4285.site/f/wLzSr/bg-text-style-assistant-bottom.webp",
+    "sha256": "8004afa23ac7e7938fe751dea2e7e9790ec04a207449d1b439cc34c69b6ddada",
+    "width": 1440,
+    "height": 480,
+    "bytes": 132792,
+    "mimeType": "image/webp"
+  },
+  "text-style.assistant-texture": {
+    "url": "https://cloudreve.atlas4285.site/f/BNjiA/bg-text-style-assistant-texture.webp",
+    "sha256": "0da88148b25b988aa2535a814bce57490dd42d59b33562278060bd075441f22b",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 280270,
+    "mimeType": "image/webp"
+  },
+  "text-style.assistant-top": {
+    "url": "https://cloudreve.atlas4285.site/f/zaoCK/bg-text-style-assistant-top.webp",
+    "sha256": "96c79fc4cb7d9cad4032d859075455de3f653eb9757bc0ce127052fc6c857aa3",
+    "width": 1440,
+    "height": 480,
+    "bytes": 138670,
+    "mimeType": "image/webp"
+  },
+  "text-style.user": {
+    "url": "https://cloudreve.atlas4285.site/f/RO1cQ/bg-text-style-user.webp",
+    "sha256": "2508ffc4db7f15998509781b67a2fe1e15e705129bfffba70d74e19719ce345c",
+    "width": 1440,
+    "height": 480,
+    "bytes": 60730,
+    "mimeType": "image/webp"
+  },
+  "next-actions.list-marker": {
+    "url": "https://cloudreve.atlas4285.site/f/1qT5/icon-next-actions-list-marker.webp",
+    "sha256": "001c71894120ccaa1338ab3897fe143071e5cfab00c516462395d26664acda20",
+    "width": 256,
+    "height": 256,
+    "bytes": 24572,
+    "mimeType": "image/webp"
+  },
+  "studio-settings.dialog-title": {
+    "url": "https://cloudreve.atlas4285.site/f/5xha/icon-studio-settings-dialog-title.webp",
+    "sha256": "c4b51a2b1e24420f90a74212a9c200eb354c2b889b9ead4a55922cbef35fb064",
+    "width": 256,
+    "height": 256,
+    "bytes": 24252,
+    "mimeType": "image/webp"
+  },
+  "studio-settings.settings-button": {
+    "url": "https://cloudreve.atlas4285.site/f/ygsj/icon-studio-settings-settings-button.webp",
+    "sha256": "d6a9edd362bb8f5cf55aa590eff7882cb0de6bc50ebd492744cc8f7574c40d23",
+    "width": 256,
+    "height": 256,
+    "bytes": 26628,
+    "mimeType": "image/webp"
+  },
+  "text-style.reasoning-marker": {
+    "url": "https://cloudreve.atlas4285.site/f/kXxFP/icon-text-style-reasoning-marker.webp",
+    "sha256": "faf758b7eced8edc81de2732181891941399e777e0f3a87d6674351717abe679",
+    "width": 256,
+    "height": 256,
+    "bytes": 22644,
+    "mimeType": "image/webp"
+  },
+  "text-style.tool-call-marker": {
+    "url": "https://cloudreve.atlas4285.site/f/ERAfJ/icon-text-style-tool-call-marker.webp",
+    "sha256": "8b37441fa31a9628587b257ecc0fb6e7fe0be5df628099b942717b1a782d2f17",
+    "width": 256,
+    "height": 256,
+    "bytes": 22094,
+    "mimeType": "image/webp"
+  }
+}

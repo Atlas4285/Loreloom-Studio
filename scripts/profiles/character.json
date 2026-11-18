@@ -1,0 +1,5 @@
+{
+  "id": "character",
+  "target": "character",
+  "modules": ["state-trace", "random-integer"]
+}

@@ -1,0 +1,5 @@
+{
+  "id": "preset",
+  "target": "preset",
+  "modules": ["next-actions", "studio-settings", "token-usage", "text-style"]
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "astral-prism",
+  "order": 1,
+  "palette": "./palette.css",
+  "assets": "./images.json",
+  "name": {
+    "en": "Astral Prism",
+    "zh-CN": "星云琉璃"
+  },
+  "description": {
+    "key": "loreloom.themes.astralPrism.description",
+    "text": "Deep blue glass, illuminated by violet, cyan, and rose."
+  }
+}

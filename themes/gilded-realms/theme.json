@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "gilded-realms",
+  "order": 3,
+  "palette": "./palette.css",
+  "assets": "./images.json",
+  "name": {
+    "en": "Gilded Realms",
+    "zh-CN": "秘银王庭"
+  },
+  "description": {
+    "key": "loreloom.themes.gildedRealms.description",
+    "text": "Dark stone, radiant court gold, and the clarity of mithril blue."
+  }
+}

@@ -1,0 +1,60 @@
+[data-loreloom-root][data-theme="gilded-realms"] {
+  /* Background and surfaces */
+  --theme-background-deep: #070a11;
+  --theme-background: #0d1420;
+  --theme-surface: #28394b;
+  --theme-surface-raised: #3a5268;
+  --theme-surface-hover: #536f89;
+
+  /* Text */
+  --theme-text-primary: #fffaf0;
+  --theme-text-secondary: #dce4e6;
+  --theme-text-muted: #b5c3cb;
+  --theme-text-on-accent: #101922;
+
+  /* Primary and secondary accents */
+  --theme-accent-primary-light: #ffeca9;
+  --theme-accent-primary: #ffd06a;
+  --theme-accent-primary-dark: #a46613;
+  --theme-accent-bridge-primary: #f9de9c;
+  --theme-accent-bridge-secondary: #d8e7e5;
+  --theme-accent-secondary-light: #e0f7ff;
+  --theme-accent-secondary: #a8e8f6;
+  --theme-accent-secondary-dark: #4f97aa;
+
+  /* Tertiary accent, highlight and status */
+  --theme-accent-tertiary-light: #ffb7b8;
+  --theme-accent-tertiary: #f27981;
+  --theme-accent-tertiary-dark: #a52a45;
+  --theme-accent-bridge-highlight: #f9ab99;
+  --theme-highlight-light: #fff6d4;
+  --theme-highlight: #fff1b6;
+  --theme-highlight-dark: #ad7c2c;
+  --theme-status-success: #8ce6b7;
+  --theme-status-danger: #ff8d87;
+
+  /* Shared effect slots used by the preview and future consumers. */
+  --theme-glass: rgb(40 57 75 / 94%);
+  --theme-border: rgb(255 211 117 / 50%);
+  --theme-border-strong: rgb(255 226 163 / 85%);
+  --theme-gradient-main: linear-gradient(
+    110deg,
+    var(--theme-accent-primary) 0%,
+    var(--theme-accent-bridge-primary) 42%,
+    var(--theme-accent-bridge-secondary) 72%,
+    var(--theme-accent-secondary) 100%
+  );
+  --theme-gradient-accent: linear-gradient(
+    110deg,
+    var(--theme-accent-tertiary),
+    var(--theme-accent-bridge-highlight),
+    var(--theme-highlight)
+  );
+  --theme-ambient-background:
+    radial-gradient(circle at 16% 12%, rgb(255 208 106 / 20%), transparent 35%),
+    radial-gradient(circle at 86% 78%, rgb(168 232 246 / 15%), transparent 38%),
+    radial-gradient(circle at 84% 13%, rgb(242 121 129 / 9%), transparent 27%),
+    var(--theme-background);
+  --theme-glow:
+    0 8px 30px rgb(255 208 106 / 24%), 0 5px 22px rgb(168 232 246 / 18%);
+}

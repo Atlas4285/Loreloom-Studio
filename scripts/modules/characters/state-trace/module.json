@@ -1,0 +1,27 @@
+{
+  "id": "state-trace",
+  "scriptId": "a82c1742-8fd8-4f73-a5a0-f7bab0443b4a",
+  "name": {
+    "en": "State Trace",
+    "zh-CN": "状态追踪"
+  },
+  "targets": ["character"],
+  "entry": "./index.ts",
+  "provides": [
+    {
+      "service": "state-trace",
+      "protocol": 1
+    },
+    {
+      "service": "state-trace-settings",
+      "protocol": 1
+    }
+  ],
+  "uses": [
+    {
+      "service": "settings-panel",
+      "protocol": 1,
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "text-style",
+  "scriptId": "8ab99227-c2e0-4a55-984d-ed48e0f84aca",
+  "name": {
+    "en": "Text Style",
+    "zh-CN": "文本美化"
+  },
+  "targets": ["preset"],
+  "entry": "./index.ts",
+  "provides": [
+    {
+      "service": "text-style",
+      "protocol": 1
+    },
+    {
+      "service": "text-style-settings",
+      "protocol": 1
+    }
+  ],
+  "uses": [
+    {
+      "service": "settings-panel",
+      "protocol": 1,
+      "required": false
+    }
+  ]
+}

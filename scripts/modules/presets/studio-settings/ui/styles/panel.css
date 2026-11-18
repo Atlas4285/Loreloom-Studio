@@ -1,0 +1,313 @@
+.loreloom-settings {
+  position: relative;
+  box-sizing: border-box;
+  width: min(640px, calc(100vw - 24px));
+  height: min(480px, calc(100dvh - 24px));
+  max-height: min(480px, calc(100dvh - 24px));
+  padding: 0;
+  color: var(--theme-text-primary);
+  color-scheme: dark;
+  background-color: var(--theme-background);
+  background-image: var(--settings-dialog-image, none);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 1px solid var(--theme-border);
+  border-radius: 16px;
+  box-shadow:
+    0 28px 80px
+      color-mix(in srgb, var(--theme-background-deep) 70%, transparent),
+    0 0 32px
+      color-mix(in srgb, var(--theme-accent-primary-dark) 22%, transparent),
+    inset 0 1px 0 rgb(255 255 255 / 10%);
+  backdrop-filter: blur(24px) saturate(145%);
+  font-family: var(--mainFontFamily, var(--studio-font, sans-serif));
+  overflow: hidden;
+}
+
+.loreloom-settings[open] {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+}
+
+.loreloom-settings::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  inset: 0 0 auto;
+  height: 3px;
+  background: var(--theme-gradient-main);
+  pointer-events: none;
+}
+
+.loreloom-settings::backdrop {
+  background: color-mix(in srgb, var(--theme-background-deep) 76%, transparent);
+  backdrop-filter: blur(8px);
+}
+
+.loreloom-settings__header {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 56px;
+  padding: 10px 12px;
+  background: linear-gradient(
+    105deg,
+    color-mix(in srgb, var(--theme-accent-primary-dark) 25%, transparent),
+    color-mix(in srgb, var(--theme-surface) 42%, transparent) 62%,
+    color-mix(in srgb, var(--theme-accent-secondary) 11%, transparent)
+  );
+  border-bottom: 1px solid var(--theme-border);
+}
+
+.loreloom-settings__title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  color: var(--theme-text-primary);
+  font-size: 1.27rem;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+}
+
+.loreloom-settings__title-icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(
+    145deg,
+    color-mix(
+      in srgb,
+      var(--theme-text-primary) 18%,
+      var(--theme-surface-raised)
+    ),
+    color-mix(in srgb, var(--theme-surface) 92%, transparent)
+  );
+  border: 1px solid var(--theme-border-strong);
+  border-radius: 9px;
+  box-shadow:
+    0 8px 20px color-mix(in srgb, var(--theme-background-deep) 42%, transparent),
+    inset 0 1px 0 rgb(255 255 255 / 52%),
+    inset 0 0 0 1px rgb(255 255 255 / 12%);
+  backdrop-filter: blur(20px) saturate(150%);
+}
+
+.loreloom-settings__title-icon-image {
+  display: block;
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.loreloom-settings__close {
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  color: var(--theme-text-primary);
+  background: linear-gradient(
+    145deg,
+    color-mix(
+      in srgb,
+      var(--theme-text-primary) 18%,
+      var(--theme-surface-raised)
+    ),
+    color-mix(in srgb, var(--theme-surface) 92%, transparent)
+  );
+  border: 1px solid var(--theme-border-strong);
+  border-radius: 9px;
+  box-shadow:
+    0 8px 20px color-mix(in srgb, var(--theme-background-deep) 42%, transparent),
+    inset 0 1px 0 rgb(255 255 255 / 52%),
+    inset 0 0 0 1px rgb(255 255 255 / 12%);
+  backdrop-filter: blur(20px) saturate(150%);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.loreloom-settings__close:hover {
+  color: var(--theme-text-primary);
+  background: linear-gradient(
+    145deg,
+    color-mix(
+      in srgb,
+      var(--theme-accent-tertiary) 26%,
+      var(--theme-surface-raised)
+    ),
+    color-mix(in srgb, var(--theme-surface) 92%, transparent)
+  );
+  border-color: var(--theme-accent-tertiary);
+  box-shadow:
+    0 0 16px color-mix(in srgb, var(--theme-accent-tertiary) 30%, transparent),
+    inset 0 1px 0 rgb(255 255 255 / 52%),
+    inset 0 0 0 1px rgb(255 255 255 / 12%);
+  transform: rotate(90deg);
+}
+
+.loreloom-settings__close:focus-visible,
+.loreloom-settings__nav-button:focus-visible,
+.loreloom-settings__select-trigger:focus-visible,
+.loreloom-settings__option:focus-visible,
+.loreloom-settings__toggle:focus-visible,
+.loreloom-settings__input:focus-visible,
+.loreloom-settings__number:focus-visible,
+.loreloom-settings__range:focus-visible,
+.loreloom-settings__range-value:focus-visible,
+.loreloom-settings__choice-input:focus-visible {
+  outline: 2px solid var(--theme-accent-secondary);
+  outline-offset: 3px;
+}
+
+.loreloom-settings__body {
+  display: grid;
+  grid-template-columns: minmax(140px, 168px) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  min-height: 0;
+  overflow: hidden;
+}
+
+.loreloom-settings__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 12px 8px;
+  background: linear-gradient(
+    170deg,
+    color-mix(in srgb, var(--theme-accent-primary-dark) 16%, transparent),
+    color-mix(in srgb, var(--theme-background) 34%, transparent)
+  );
+  border-right: 1px solid var(--theme-border);
+}
+
+.loreloom-settings__nav-button {
+  position: relative;
+  width: 100%;
+  min-height: 36px;
+  padding: 7px 8px 7px 22px;
+  color: var(--theme-text-secondary);
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--theme-surface-raised) 84%, transparent),
+    color-mix(in srgb, var(--theme-background-deep) 78%, transparent)
+  );
+  border: 1px solid
+    color-mix(in srgb, var(--theme-border-strong) 70%, transparent);
+  border-radius: 9px;
+  font: inherit;
+  font-weight: 400;
+  text-align: left;
+  cursor: pointer;
+  box-shadow:
+    0 4px 12px rgb(0 0 0 / 22%),
+    inset 0 1px 0 rgb(255 255 255 / 30%),
+    inset 0 0 0 1px rgb(255 255 255 / 6%);
+  -webkit-backdrop-filter: blur(28px) saturate(160%);
+  backdrop-filter: blur(28px) saturate(160%);
+  transition:
+    color 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.loreloom-settings__nav-button::before {
+  content: "◆";
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  color: var(--theme-accent-primary);
+  font-size: 0.56rem;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.loreloom-settings__nav-button:hover {
+  color: var(--theme-text-primary);
+  background: color-mix(in srgb, var(--theme-surface-hover) 86%, transparent);
+  border-color: var(--theme-border);
+  transform: translateX(2px);
+}
+
+.loreloom-settings__nav-button[aria-current="page"] {
+  color: var(--theme-text-primary);
+  background: linear-gradient(
+    105deg,
+    color-mix(in srgb, var(--theme-accent-primary-dark) 86%, transparent),
+    color-mix(in srgb, var(--theme-surface-hover) 84%, transparent)
+  );
+  border-color: var(--theme-accent-primary);
+  box-shadow:
+    0 0 18px color-mix(in srgb, var(--theme-accent-primary) 17%, transparent),
+    inset 3px 0 0 var(--theme-accent-secondary);
+  font-weight: 700;
+}
+
+.loreloom-settings__nav-button[aria-current="page"]::before {
+  color: var(--theme-accent-secondary);
+}
+
+.loreloom-settings__content {
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  overscroll-behavior: contain;
+  min-width: 0;
+  padding: 12px 12px 16px;
+}
+
+.loreloom-settings__section-title {
+  margin: 0 0 12px;
+  padding: 0 0 8px;
+  color: var(--theme-text-primary);
+  border-bottom: 1px solid var(--theme-border);
+  font-size: 1.06rem;
+  font-weight: 750;
+  letter-spacing: 0.02em;
+}
+
+.loreloom-settings__section-title::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 15px;
+  margin-right: 6px;
+  border-radius: 3px;
+  background: var(--theme-gradient-main);
+  box-shadow: 0 0 12px var(--theme-accent-secondary);
+  vertical-align: -2px;
+}
+
+.loreloom-settings:not([open]) {
+  display: none;
+}
+.loreloom-settings__status {
+  min-height: 1.2em;
+  margin: 8px 0 0;
+  color: var(--theme-text-muted);
+  font-size: 0.85rem;
+}
+.loreloom-settings__status[data-error="true"] {
+  color: var(--theme-status-danger);
+}
+.loreloom-settings::backdrop {
+  background: rgb(0 0 0 / 65%);
+}

@@ -1,0 +1,27 @@
+{
+  "id": "token-usage",
+  "scriptId": "f9a05d75-83a9-4b1d-b2a3-0132860526ef",
+  "name": {
+    "en": "Token Usage",
+    "zh-CN": "用量统计"
+  },
+  "targets": ["preset"],
+  "entry": "./index.ts",
+  "provides": [
+    {
+      "service": "token-usage",
+      "protocol": 1
+    },
+    {
+      "service": "token-usage-settings",
+      "protocol": 1
+    }
+  ],
+  "uses": [
+    {
+      "service": "settings-panel",
+      "protocol": 1,
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "abyssal-tide",
+  "order": 4,
+  "palette": "./palette.css",
+  "assets": "./images.json",
+  "name": {
+    "en": "Abyssal Tide",
+    "zh-CN": "旧日潮汐"
+  },
+  "description": {
+    "key": "loreloom.themes.abyssalTide.description",
+    "text": "Ocean depths, cool phosphorescence, and a trace of aged bronze."
+  }
+}

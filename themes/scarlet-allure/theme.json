@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "scarlet-allure",
+  "order": 2,
+  "palette": "./palette.css",
+  "assets": "./images.json",
+  "name": {
+    "en": "Scarlet Allure",
+    "zh-CN": "绯色悸动"
+  },
+  "description": {
+    "key": "loreloom.themes.scarletAllure.description",
+    "text": "Violet velvet, luminous rose, and a soft champagne glow."
+  }
+}
